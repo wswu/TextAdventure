@@ -1,0 +1,36 @@
+[start]
+code = """
+happiness = 0
+print("Enter your name: ")
+name = readline()
+"""
+text = """
+Hello $name, welcome to your next adventure!
+blah blah blah
+What do you want to do?
+"""
+
+[[start.next]]
+prompt = "Keep going"
+jump = "a"
+code = """
+happiness += 1
+"""
+
+[[start.next]]
+prompt = "End here"
+jump = "b"
+
+[a]
+text = """
+Good choice!
+Your happiness level is $happiness.
+I think we'll call it quits anyway.
+"""
+
+[b]
+text = """
+You've reached a bad end...
+Your happiness level is $happiness.
+Better luck next time!
+"""

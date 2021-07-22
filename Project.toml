@@ -1,0 +1,8 @@
+name = "TextAdventure"
+uuid = "dc64baff-bace-4499-959c-027e57682f26"
+authors = ["winston <wswu24@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+TOML = "fa267f1f-6049-4f14-aa54-33bafae1ed76"
+TerminalMenus = "dc548174-15c3-5faf-af27-7997cfbde655"
